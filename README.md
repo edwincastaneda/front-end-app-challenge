@@ -6,7 +6,16 @@
 - Container type: Docker
 - Node Version: 20.19.4
 
-## Instructions
+## Folder Architecture
+
+App: contiene el codebase de componentizacion
+SCSS: contiene todo el sistema de diseño
+  /base: 
+    _reset.scss: hace la limpieza del preprocesador del navegador
+  main.scss: contiene toda la indexación del sistema de diseño
+sytles.scss: referencia al sistema de diseño
+
+
 
 
 # FrontEndApp
