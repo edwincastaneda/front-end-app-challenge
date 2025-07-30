@@ -1,0 +1,24 @@
+$max-width-contained: 1200px;
+$spacing-horizontal: 16px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-horizontal;
+  padding-right: $spacing-horizontal;
+  box-sizing: border-box;
+
+  &--full {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--contained {
+    max-width: $max-width-contained;
+    width: 100%;
+  }
+}

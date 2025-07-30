@@ -1,3 +1,10 @@
 
-// Base styles
-@import 'base/reset';
+// BASE
+@use 'base/reset';
+@use 'base/variables';
+
+
+// LAYOUT
+
+@use 'layout/container';
+@use 'layout/grid';

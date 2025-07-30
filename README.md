@@ -8,7 +8,7 @@
 
 ## Folder Architecture
 
-App: contiene el codebase de componentizacion
+AppComponent: contiene el codebase de componentizacion
 SCSS: contiene todo el sistema de diseño
   /base: 
     _reset.scss: hace la limpieza del preprocesador del navegador
