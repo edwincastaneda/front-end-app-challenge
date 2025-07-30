@@ -2,9 +2,12 @@
 // BASE
 @use 'base/reset';
 @use 'base/variables';
-
+@use 'base/globals';
 
 // LAYOUT
 
 @use 'layout/container';
 @use 'layout/grid';
+
+// COMPONENTS
+@use 'components/navigation';

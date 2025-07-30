@@ -1,5 +1,4 @@
-$max-width-contained: 1200px;
-$spacing-horizontal: 16px;
+@use '../base/variables' as *;
 
 .container {
   display: flex;
@@ -10,15 +9,17 @@ $spacing-horizontal: 16px;
   padding-right: $spacing-horizontal;
   box-sizing: border-box;
 
-  &--full {
+  &-full {
     width: 100%;
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
 
-  &--contained {
+  &-contained {
+    margin:auto;
     max-width: $max-width-contained;
     width: 100%;
   }
+
 }

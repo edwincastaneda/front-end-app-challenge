@@ -1,2 +1,17 @@
-$max-width-contained: 1200px;
+
+// COLORS
+$color-white: white;
+
+// BACKGROUNDS
+$bg-nav: #303141;
+$bg-main: #37394B;
+$bg-footer: #2B2C3B;
+
+// BORDERS
+$border-color-nav: #4D6184;
+$border-color-footer: $bg-nav;
+
+// CONTAINER SETTINGS
+$max-width-contained: 900px;
 $spacing-horizontal: 16px;
+
