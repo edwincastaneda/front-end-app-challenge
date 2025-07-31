@@ -1,0 +1,65 @@
+@use "../base/variables" as *;
+
+.pagination-container{
+  margin-top:3rem;
+  margin-bottom:10px;
+  text-align:center;
+
+  & .pagination-list{
+    display: flex;
+    justify-content: center;
+
+    & .page-item{
+      display: flex;
+      flex: 0.045;
+
+
+      & .page-link{
+        padding: 6px 13px;
+        font-size: 14px;
+        border-radius: $border-radius;
+        min-width: 34px;
+
+        &.chevron{
+          border: 1px solid $bg-purple;
+          border-radius: $border-radius;
+          position: relative;
+
+
+          & .chevron-right {
+            position: absolute;
+            top: 2px;
+            right: 13px;
+            font-size: 20px;
+            font-weight: normal;
+            transform: rotate(180deg);
+          }
+
+          & .chevron-left {
+            position: absolute;
+            top: 0px;
+            right: 13px;
+            font-size: 20px;
+            font-weight: normal;
+          }
+
+        }
+
+        &.active{
+          background: $bg-purple;
+        }
+
+        &:hover{
+          background: $bg-purple-hover;
+        }
+
+        &.no-hover:hover{
+          background: transparent;
+        }
+
+      }
+
+    }
+  }
+
+}

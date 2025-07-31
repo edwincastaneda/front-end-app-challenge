@@ -1,6 +1,7 @@
 <!-- Title & Search Section -->
+<div class="products-component">
 <section class="container-contained">
-  <header class="plugin-store-component">
+  <header>
     <h1 class="heading-text">Condimentum consectetur</h1>
   </header>
   <div class="inputs-filters-container">
@@ -59,59 +60,34 @@
       </span>
     </div>
 
-
-    <!-- PRODUCT -->
-
     <div class="cards-container">
-      <div class="product-card">
-        <ul class="product-card-header">
-          <li>
-            <ul>
-              <li class="on-sale">
-                <span class="dot"></span>
-                <span>On Sale</span>
-              </li>
-              <li>
-                <span class="in-stock">In stock</span>
-              </li>
-              <li>
-                <img class="product-image" src="/assets/products/item-1.png"/>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <div class="number-input">
-              <a class="number-input-button-minus" onclick="this.nextElementSibling.stepDown()"></a>
-              <input class="quantity" type="number" min="1" value="1"/>
-              <a class="number-input-button-plus" onclick="this.previousElementSibling.stepUp()"></a>
-            </div>
-          </li>
-        </ul>
+      <app-product
+        *ngFor="let product of products"
+        [title]="product.title"
+        [description]="product.description"
+        [price]="product.price"
+        [before]="product.before"
+        [logo]="product.logo"
+        [image]="product.image"
+        [in_stock]="product.in_stock"
+        [on_sale]="product.on_sale"
 
-        <ul class="product-card-body">
-          <li class="product-details">
-            <h3 class="product-details-title">Blue Partyhat</h3>
-            <img class="product-details-logo" src="/assets/logos/game_logo.svg"/>
-          </li>
-          <li class="product-price">
-            <span>$450.50</span>
-            <span>$522.50</span>
-          </li>
-          <li class="product-description">
-            <span>Lorem ipsum dolor sit amet consetetur sadpscing elitr.</span>
-          </li>
-          <li class="card-actions">
-            <a class="btn-details" href="#">Details</a>
-            <a class="btn-add" href="#">
-                Add <img src="/assets/icons/cart_icon.svg">
-            </a>
-          </li>
-        </ul>
-      </div>
+      ></app-product>
     </div>
 
-
+    <div class="pagination-container">
+      <ul class="pagination-list">
+        <li class="page-item"><a class="page-link chevron" href="#"><span class="chevron-left">&lsaquo;</span></a></li>
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><span class="page-link no-hover">&ctdot;</span></li>
+        <li class="page-item"><a class="page-link" href="#">11</a></li>
+        <li class="page-item"><a class="page-link chevron" href="#"><span class="chevron-right">&lsaquo;</span></a></li>
+      </ul>
+    </div>
   </div>
 
-
 </section>
+</div>

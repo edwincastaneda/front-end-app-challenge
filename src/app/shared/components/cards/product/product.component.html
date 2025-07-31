@@ -1,0 +1,47 @@
+
+  <div class="product-card">
+    <ul class="product-card-header">
+      <li>
+        <ul>
+          <li class="on-sale" [style.visibility]="on_sale ? 'visible' : 'hidden'">
+            <span class="dot"></span>
+            <span>On Sale</span>
+          </li>
+          <li [style.visibility]="in_stock ? 'visible' : 'hidden'">
+            <span class="in-stock">In stock</span>
+          </li>
+          <li>
+            <img class="product-image" src="/assets/products/{{ image }}"/>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="number-input">
+          <a class="number-input-button-minus" onclick="this.nextElementSibling.stepDown()"></a>
+          <input class="quantity" type="number" min="1" value="1"/>
+          <a class="number-input-button-plus" onclick="this.previousElementSibling.stepUp()"></a>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="product-card-body">
+      <li class="product-details">
+        <h3 class="product-details-title">{{ title }}</h3>
+        <img class="product-details-logo" src="/assets/logos/{{ logo }}"/>
+      </li>
+      <li class="product-price">
+        <span>$450.50</span>
+        <span>$522.50</span>
+      </li>
+      <li class="product-description">
+        <span>{{ description }}</span>
+      </li>
+      <li class="card-actions">
+        <a class="btn-details" href="#">Details</a>
+        <a class="btn-add" href="#">
+          Add <img src="/assets/icons/cart_icon.svg">
+        </a>
+      </li>
+    </ul>
+  </div>
+

@@ -6,7 +6,7 @@ main {
   background-repeat: no-repeat;
   color: $color-white;
   z-index: 0;
-  height: 100vh;
+  min-height: 100vh;
 
   &::before {
     content: "";
