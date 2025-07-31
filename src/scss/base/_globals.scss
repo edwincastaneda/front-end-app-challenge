@@ -1,7 +1,6 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
-
-main{
+main {
   background-image: url("/assets/images/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,6 +19,4 @@ main{
     position: relative;
     z-index: 2;
   }
-
 }
-

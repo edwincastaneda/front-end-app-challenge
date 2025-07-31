@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 .container {
   display: flex;
@@ -17,9 +17,8 @@
   }
 
   &-contained {
-    margin:auto;
+    margin: auto;
     max-width: $max-width-contained;
     width: 100%;
   }
-
 }

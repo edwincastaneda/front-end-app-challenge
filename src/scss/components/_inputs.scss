@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 input[type="text"],
 input[type="number"],
@@ -38,16 +38,15 @@ select:disabled {
   color: $input-disabled-color;
 }
 
-
 .select-wrapper {
   position: relative;
 
   &.icon-sword:after {
-    background-image: url('/assets/icons/sword_icon.svg');
+    background-image: url("/assets/icons/sword_icon.svg");
   }
 
   &.icon-search:after {
-    background-image: url('/assets/icons/search_icon.svg');
+    background-image: url("/assets/icons/search_icon.svg");
     width: 15px;
     height: 15px;
     top: 16px;
@@ -56,15 +55,15 @@ select:disabled {
   }
 
   &.icon-money:after {
-    background-image: url('/assets/icons/money_icon.svg');
+    background-image: url("/assets/icons/money_icon.svg");
   }
 
   &.icon-leaf:after {
-    background-image: url('/assets/icons/leaf_icon.svg');
+    background-image: url("/assets/icons/leaf_icon.svg");
   }
 
-  &:after{
-    content: '';
+  &:after {
+    content: "";
     position: absolute;
     display: block;
     background-repeat: no-repeat;
@@ -74,15 +73,13 @@ select:disabled {
     top: 13px;
     left: 11px;
     z-index: 0;
-
   }
 
-
-  &:before{
-    content: '';
+  &:before {
+    content: "";
     position: absolute;
     display: block;
-    background-image: url('/assets/icons/chevron_icon.svg');
+    background-image: url("/assets/icons/chevron_icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 10px;
@@ -92,17 +89,16 @@ select:disabled {
     z-index: 0;
   }
 
-  &.no-select:before{
+  &.no-select:before {
     display: none;
   }
-
 }
 
-input[type="text"]{
+input[type="text"] {
   cursor: initial;
 }
 
-.leyend-text{
+.leyend-text {
   position: absolute;
   font-size: 10px;
   top: 8px;
@@ -110,7 +106,7 @@ input[type="text"]{
   color: $placeholder-color;
 }
 
-.select-caption{
+.select-caption {
   position: absolute;
   font-size: 13px;
   top: 20px;
@@ -118,7 +114,6 @@ input[type="text"]{
   color: $color-white;
 }
 
-
-select.leyend{
+select.leyend {
   color: transparent;
 }
