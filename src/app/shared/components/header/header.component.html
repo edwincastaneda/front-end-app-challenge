@@ -76,6 +76,25 @@
           >Sign In <span class="icon-user"></span
         ></a>
       </li>
+      <li class="nav-item">
+        <a href="#" onclick="document.getElementById('overlay-menu').style.display = 'block'">Menu</a>
+      </li>
     </ul>
   </nav>
 </menu>
+
+<div id="overlay-menu" class="overlay">
+  <div class="menu">
+    <button class="close-btn" onclick="document.getElementById('overlay-menu').style.display = 'none'">✕</button>
+    <ul>
+      <li><a href="#">Currency</a></li>
+      <li><a href="#">Items</a></li>
+      <li><a href="#">Accounts</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Swap</a></li>
+      <li><a href="#">Sell</a></li>
+      <li><a href="#">USD</a></li>
+      <li class="logo-menu-mobile"><img  src="/assets/images/logo-inline.png" /></li>
+    </ul>
+  </div>
+</div>

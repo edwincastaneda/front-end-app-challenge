@@ -24,6 +24,21 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .inputs-filters-item {
+    &-1 {
+      flex: 0.3;
+    }
+
+    &-2 {
+      flex: 0.3;
+    }
+  }
+}
+
+
+
+
 .select-game {
   padding-right: 1rem;
 }
@@ -41,6 +56,50 @@
   border-right: 1px solid $border-color-nav;
   &-select {
     border-radius: 0;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .inputs-filters-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs-filters-item {
+    &-1 {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+
+    &-2 {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+    &-3 {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+  }
+
+  .select-game {
+    padding-right: 0;
+  }
+
+  .products-component {
+    padding-top: 1.5rem;
+  }
+
+  .heading-text{
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width: 1115px) {
+  .heading-text{
+    margin: 0px 15px 15px;
   }
 }
 
@@ -64,6 +123,59 @@
     }
     & .sorter-item:last-child{
       flex: 0.2;
+    }
+  }
+}
+
+
+@media (max-width: 1110px) {
+
+  .sorter-container {
+    & .sorter-heading {
+      & .sorter-item:first-child {
+        flex: 0.7;
+      }
+
+      & .sorter-item:last-child {
+        flex: 0.3;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+
+  .sorter-container {
+    padding: 15px;
+    & .sorter-heading {
+      & .sorter-item:first-child {
+        flex: 0.5;
+      }
+
+      & .sorter-item:last-child {
+        flex: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+
+  .sorter-container {
+    padding: 15px;
+    & .sorter-heading {
+      display: flex;
+      flex-direction: column-reverse;
+      & .sorter-item:first-child {
+        flex: 1;
+        width: 100%;
+      }
+
+      & .sorter-item:last-child {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   }
 }

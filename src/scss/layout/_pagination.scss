@@ -63,3 +63,39 @@
   }
 
 }
+
+
+@media (max-width: 1110px) {
+
+  .pagination-container {
+    & .pagination-list {
+      & .page-item {
+        flex: 0.065;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .pagination-container {
+    & .pagination-list {
+      & .page-item {
+        flex: 0.075;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .pagination-container {
+    & .pagination-list {
+      & .page-item {
+        flex: 0.9;
+      }
+    }
+  }
+}
