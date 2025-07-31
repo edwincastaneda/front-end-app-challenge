@@ -1,0 +1,56 @@
+@use '../base/variables' as *;
+
+footer{
+  background: $bg-nav;
+  border-top: 8px solid $border-color-footer;
+}
+
+.payments{
+  background: $bg-footer;
+  padding: 10px 0px;
+  & ul{
+    display: flex;
+    align-items: center;
+  }
+
+  & .logo-payment{
+      display: flex;
+      list-style: none;
+      color: #ceced6;
+    font-size: 14px;
+  }
+
+  & .logo-img{
+    margin: 10px 10px;
+    max-width: 90px;
+
+    &.mc{
+      max-width: 60px;
+    }
+  }
+
+}
+
+.social{
+  padding: 25px 0px;
+  border-bottom: 1px solid $border-blue;
+
+  & ul{
+    display: flex;
+    align-items: center;
+  }
+
+  & .logo-social{
+    display: flex;
+    list-style: none;
+    color: #ceced6;
+    font-size: 14px;
+  }
+
+  & .logo-img{
+    margin: 10px 5px;
+    max-width: 35px;
+  }
+
+}
+

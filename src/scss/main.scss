@@ -6,10 +6,10 @@
 @use 'base/typography';
 
 // LAYOUT
-
+@use 'layout/footer';
+@use 'layout/navigation';
 @use 'layout/container';
 @use 'layout/grid';
 
 // COMPONENTS
-@use 'components/navigation';
 @use 'components/inputs';
