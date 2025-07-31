@@ -12,13 +12,13 @@ main{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(46, 57, 109, 0.5); // morado semitransparente
+    background-color: $bg-main-overlay;
     z-index: 1;
   }
 
   > * {
     position: relative;
-    z-index: 2; // para que el contenido esté encima del overlay
+    z-index: 2;
   }
 
 }

@@ -1,3 +1,46 @@
+
 .plugin-store-component{
-  padding-top: 9rem;
+  padding-top: 7rem;
+}
+
+.inputs-filters-container{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.inputs-filters-item {
+
+  &-1{
+    flex: 0.3;
+  }
+
+  &-2{
+    flex: 0.7;
+  }
+
+  &-3{
+    flex: 0.2;
+  }
+
+}
+
+.select-game{
+  padding-right: 1rem;
+}
+
+.search{
+  padding-right: 0.0rem;
+
+  &-input{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+
+.price{
+  border-right: 1px solid #2b57b3;
+  &-select{
+    border-radius: 0;
+  }
 }
