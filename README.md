@@ -7,8 +7,7 @@
 
 ## Arquitectura de Carpetas
 
-![](/Users/mac/Desktop/assets/arquitectura.png)
-
+![arquitectura.png](public/assets/images/arquitectura.png)
 
 ## SRC/SCSS (Sistema de diseño)
 Contiene todo el sistema de diseño
