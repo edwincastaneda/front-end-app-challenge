@@ -1,76 +1,73 @@
-# Front Application
+# Front-End Application
 
-## Project Info
+## Información de las herramientas
 
 - Framework: Angular 20.1.3
-- Container type: Docker
 - Node Version: 20.19.4
 
-## Folder Architecture
+## Arquitectura de Carpetas
 
-AppComponent: contiene el codebase de componentizacion
-SCSS: contiene todo el sistema de diseño
-/base:
-\_reset.scss: hace la limpieza del preprocesador del navegador
-main.scss: contiene toda la indexación del sistema de diseño
-sytles.scss: referencia al sistema de diseño
+![](/Users/mac/Desktop/assets/arquitectura.png)
 
-# FrontEndApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+## SRC/SCSS (Sistema de diseño)
+Contiene todo el sistema de diseño
+### /base:
+Contiene los valores globales, un reset sencillo, tipografia y archivo de variables.
 
-## Development server
+### /components:
+Contiene para este caso los archivos de los cards de los productos en venta y los modificadores para los inputs.
 
-To start a local development server, run:
+### /layout:
+Contiene elementos de armado  de partes del aplicativo que podrian reutilizarse como el footer, la navegacion, paginacion.
+
+#### NOTA: este es un trabajo en proceso, y el objetivo es establecer una estructura desacoplada pensada en modulos y componentes.
+
+## SRC/APP (Codebase)
+
+### /layout:
+contiene la sección main o wrapper para enlatar el contenido central de la aplicación.
+
+### /pages:
+contiene las rutas, de momento la home (/) es la unica ruta, y la pagina que esta creada es la del catalogo de productos.
+
+### /shared:
+contiene las elementos reutilizables como el header (navigation) y el footer, adicional se separo el componente cards el cual ya funciona como un componente independiente.
+
+#### NOTA: este es un trabajo en proceso, y el objetivo es establecer una estructura desacoplada pensada en modulos y componentes.
+
+
+## SRC/TEST (Unit Testing)
+Se agrupan todos los test en la carpeta test para mantener el codigo funcional sobre el SRC y los test agrupados para su objetivo especifico.
+
+## PUBLIC
+### /assets:
+Contiene todos los activos como imagenes de producto, iconos, logos y cualquier elemento visual. Aqui se podrian colocar elementos estaticos publicos como fonts, xml, o json.
+
+# ¿Cómo Ejecutar?
+Descargue o clone el repositorio en una carpeta conocida.
+## Local Compile
+
+Instalar las dependencias:
+Verifique antes que posee la versión adecuadas de Node.js para evitar problemas. En el inicio de este documento se coloco la versión en la que fue construido.
+
+```bash
+npm install
+```
+
+Ejecutar para correr el servidor en el equipo local:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Para construir la aplicación y empaquetarla para usarla en un nginx o docker:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+Ejecución de test unitarios (se esta usando jasmine)
 ```bash
 ng test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
