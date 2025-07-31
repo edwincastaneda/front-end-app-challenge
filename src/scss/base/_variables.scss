@@ -6,26 +6,29 @@ $bg-nav: #303141;
 $bg-main: #37394b;
 $bg-main-overlay: rgba(42, 58, 128, 0.51);
 $bg-footer: #2b2c3b;
+$bg-green: #5CDB96;
+$bg-green-hover: rgba(92, 219, 150, 0.6);
+$bg-purple: #5866D2;
+$bg-purple-hover: rgba(58, 72, 159, 0.73);
 
 // BORDERS
-$border-color-nav: rgba(77, 97, 132, 0.8);
+$border-color-nav: rgba(77, 97, 132, 0.99);
 $border-color-footer: $bg-nav;
-$border-blue: #455478;
 
 // CONTAINER SETTINGS
 $max-width-contained: 1110px;
 $spacing-horizontal: 16px;
+$border-radius: 3px;
 
 // INPUTS
 $input-padding-y: 0.85rem;
 $input-padding-x: 1rem;
 $input-font-size: 0.8rem;
-$input-border-radius: 0.3rem;
 
 $input-border-color: transparent;
 $input-text-color: $color-white;
 $input-font-weight: 600;
-$input-bg-color: rgba(44, 119, 211, 0.12);
+$input-bg-color: rgba(64, 105, 145, 0.12);
 $input-focus-border: transparent;
 $input-focus-shadow: transparent;
 $input-disabled-bg: #f3f4f6;

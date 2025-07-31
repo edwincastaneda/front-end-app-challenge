@@ -5,18 +5,17 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   color: $color-white;
-  filter: sepia(0.4);
+  z-index: 0;
+  height: 100vh;
 
   &::before {
     content: "";
     position: absolute;
-    inset: 0;
     background-color: $bg-main-overlay;
     z-index: 1;
+
   }
 
-  > * {
-    position: relative;
-    z-index: 2;
-  }
+
 }
+

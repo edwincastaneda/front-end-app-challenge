@@ -1,0 +1,117 @@
+<!-- Title & Search Section -->
+<section class="container-contained">
+  <header class="plugin-store-component">
+    <h1 class="heading-text">Condimentum consectetur</h1>
+  </header>
+  <div class="inputs-filters-container">
+    <div class="inputs-filters-item-1 select-game">
+      <div class="select-wrapper icon-sword">
+        <select>
+          <option>Select a game</option>
+        </select>
+      </div>
+    </div>
+    <div class="inputs-filters-item-2 search">
+      <div class="select-wrapper icon-search no-select">
+        <input type="text" class="search-input" placeholder="Search"/>
+      </div>
+    </div>
+    <div class="inputs-filters-item-3 price">
+      <div class="select-wrapper icon-money">
+        <span class="leyend-text">Price</span>
+        <span class="select-caption">All</span>
+        <select class="leyend price-select">
+          <option>All</option>
+        </select>
+      </div>
+    </div>
+    <div class="inputs-filters-item-3 item-type">
+      <div class="select-wrapper icon-leaf">
+        <span class="leyend-text">Item Type</span>
+        <span class="select-caption">All</span>
+        <select class="leyend">
+          <option>All</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products Wrapper Content -->
+<section class="container-contained">
+
+
+  <div class="sorter-container">
+
+    <!-- SORTER -->
+    <div class="sorter-heading">
+      <span class="sorter-item">Showing 20 - from 125</span>
+      <span class="sorter-item">
+        <div class="inputs-filters-item">
+          <div class="select-wrapper icon-config">
+            <span class="leyend-text">Sort By</span>
+            <span class="select-caption">Featured</span>
+            <select class="leyend">
+              <option>Featured</option>
+            </select>
+          </div>
+        </div>
+      </span>
+    </div>
+
+
+    <!-- PRODUCT -->
+
+    <div class="cards-container">
+      <div class="product-card">
+        <ul class="product-card-header">
+          <li>
+            <ul>
+              <li class="on-sale">
+                <span class="dot"></span>
+                <span>On Sale</span>
+              </li>
+              <li>
+                <span class="in-stock">In stock</span>
+              </li>
+              <li>
+                <img class="product-image" src="/assets/products/item-1.png"/>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="number-input">
+              <a class="number-input-button-minus" onclick="this.nextElementSibling.stepDown()"></a>
+              <input class="quantity" type="number" min="1" value="1"/>
+              <a class="number-input-button-plus" onclick="this.previousElementSibling.stepUp()"></a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="product-card-body">
+          <li class="product-details">
+            <h3 class="product-details-title">Blue Partyhat</h3>
+            <img class="product-details-logo" src="/assets/logos/game_logo.svg"/>
+          </li>
+          <li class="product-price">
+            <span>$450.50</span>
+            <span>$522.50</span>
+          </li>
+          <li class="product-description">
+            <span>Lorem ipsum dolor sit amet consetetur sadpscing elitr.</span>
+          </li>
+          <li class="card-actions">
+            <a class="btn-details" href="#">Details</a>
+            <a class="btn-add" href="#">
+                Add <img src="/assets/icons/cart_icon.svg">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</section>

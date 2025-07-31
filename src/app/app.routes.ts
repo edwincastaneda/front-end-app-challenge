@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './layouts/main/main.component';
-import { PluginStoreComponent } from './pages/plugin-store/plugin-store.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: PluginStoreComponent,
+    component: ProductsComponent,
     children: [
       {
         path: '',
         loadComponent: () =>
-          import('./pages/plugin-store/plugin-store.component').then(
-            (m) => m.PluginStoreComponent,
+          import('./pages/products/products.component').then(
+            (m) => m.ProductsComponent,
           ),
       },
     ],
