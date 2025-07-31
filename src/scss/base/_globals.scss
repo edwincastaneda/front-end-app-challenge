@@ -2,7 +2,25 @@
 
 
 main{
-  background: $bg-main;
+  background-image: url("/assets/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+  filter: sepia(0.4);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(46, 57, 109, 0.5); // morado semitransparente
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2; // para que el contenido esté encima del overlay
+  }
+
 }
 
 footer{
